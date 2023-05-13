@@ -8,6 +8,7 @@
   --focus-nav-ccolor: #404bbf;
   --backround-section-color: #f4f4fd;
   --border-btn-color: #e7e9fc;
+  --icons-customers-color: #8e8f99;
 }
 /*Загальні властивості*/
 body {
@@ -57,15 +58,13 @@ img {
 }
 /*Хедер*/
 
-.page-header {
-  display: flex;
-  align-items: center;
-
+/*.page-header {
   border-bottom: 1px solid var(--background-img-color);
-}
+}*/
 .page-header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--background-img-color);
 }
 .list-adress {
   display: flex;
@@ -103,11 +102,12 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-fill-color);
   padding: 24px 0;
-  display: block;
 }
+
 .link-nav:hover,
 .link-nav:focus {
   color: var(--focus-nav-ccolor);
+  /*text-decoration: underline;*/
 }
 .link-adres {
   font-size: 16px;
@@ -146,6 +146,13 @@ img {
 }
 
 .section-one {
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/img_section1/people-office.jpg);
+  background-size: cover;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
   background-color: var(--background-color);
   padding: 188px 0;
 }
@@ -190,6 +197,14 @@ img {
 .description-list-item {
   width: calc((100% -72px) / 4);
 }
+.icon {
+  margin: 24px 100px;
+}
+.icon-bakcround {
+  background-color: var(--backround-section-color);
+  height: 112px;
+  margin-bottom: 8px;
+}
 
 /*SECTION-3*/
 .section-three {
@@ -217,6 +232,10 @@ img {
 }
 
 /*SECTION-4*/
+.job {
+  margin-bottom: 8px;
+}
+
 .team-list {
   display: flex;
   gap: 24px;
@@ -228,6 +247,8 @@ img {
   background-color: var(--backround-white-color);
   flex-basis: calc((100% -72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .name-section {
@@ -253,6 +274,59 @@ img {
   letter-spacing: 0.02em;
   color: var(--backround-section-color);
 }
+.list-soc-network {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.backround-soc-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  background-color: var(--logo-fill-color);
+}
+.social-list {
+  flex-basis: calc((100%-72px) / 4);
+  width: 40px;
+  height: 40px;
+}
+.backround-soc-icon:hover,
+.backround-soc-icon:focus {
+  background-color: var(--focus-nav-ccolor);
+}
+/*SECTION-5*/
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icons-customers-color);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--icons-customers-color);
+}
+.customers-icon {
+  fill: currentColor;
+}
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--focus-nav-ccolor);
+  border: 1px solid var(--focus-nav-ccolor);
+}
 /*Footer*/
 
 .decorate-footer {
@@ -274,7 +348,42 @@ img {
 .logo-fill-white {
   color: var(--backround-section-color);
 }
+.container-footer {
+  display: flex;
+}
+.description-name-p-light-soc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--backround-section-color);
+  margin-bottom: 16px;
+}
+.list-soc-network-footer {
+  display: flex;
 
+  gap: 16px;
+}
+.social-list-footer {
+  width: 40px;
+  height: 40px;
+}
+.backround-soc-icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo-fill-color);
+  border-radius: 50%;
+}
+.backround-soc-icon-footer:hover,
+.backround-soc-icon-footer:focus {
+  background-color: #31d0aa;
+}
+
+.social-media {
+  margin-left: 120px;
+}
 /*Portfolio*/
 
 .page-two-btn {
@@ -336,4 +445,9 @@ img {
   background-color: var(--backround-white-color);
   width: calc((100% - 48px) / 3);
   border-radius: 0px 0px 4px 4px;
+}
+.name-of-cards:hover,
+.name-of-cards:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
