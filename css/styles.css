@@ -299,7 +299,6 @@ img {
   background-color: var(--logo-fill-color);
 }
 .social-list {
-  flex-basis: calc((100%-72px) / 4);
   width: 40px;
   height: 40px;
 }
